@@ -34,10 +34,8 @@ The actions in the example correspond to  **UserController**
 
 |Action | Function | Function parameters | Url | Request json example |
 |-------|----------|---------------------|-----|----------------------|
-| a | b | c | d | e |
-
-<!-- | GET Items listed by a user |  ~/web/controllers/user_controller/get_item | user_id, page,orderBy | /auth/users/${userId}/items?page=${page}&orderBy=${orderBy} |  NONE |
-|POST - Item posted by a user | ~/web/controllers/user_controller/add_item | user_id, item | /auth/users/${user_id}/items   |  {"user_id": ${user_id}, "item": {"available": ${available}, "description": ${description}, "id": ${id}, "reservationEndDate": ${reservationEndDate}, "title": ${title}}} -->
+| GET Items listed by a user |  ~/web/controllers/user_controller/get_item | user_id, page,orderBy | /auth/users/${userId}/items?page=${page}&orderBy=${orderBy} |  NONE |
+|POST - Item posted by a user | ~/web/controllers/user_controller/add_item | user_id, item | /auth/users/${user_id}/items   | {"user_id": ${user_id}, "item": {"available": ${available}, "description": ${description}, "id": ${id}, "reservationEndDate": ${reservationEndDate}, "title": ${title}}} |
 
 Example routes in  [**ItemController**](https://bitbucket.org/leapingwolf/aerialroots/src/b2b08a1f2585cf11a8c04c9c35ac83997f1f411d/web/controllers/item_controller.ex?at=master&fileviewer=file-view-default):
 Actions for item update and delete to the item are configured as 
