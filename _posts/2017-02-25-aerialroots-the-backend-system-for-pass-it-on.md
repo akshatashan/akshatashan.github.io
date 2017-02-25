@@ -44,6 +44,7 @@ resources "/items", ItemController, except: [:new, :edit, :create] do
 end
 ```
 The actions in the example correspond to **ItemController**
+
 |Action | Function | Function parameters | Url | Request json example |
 |-------|----------|---------------------|-----|----------------------|
 |GET - All items| ~/web/controllers/item_controller/index| page,orderBy| /auth/items?page=${page}&orderBy=${orderBy}|
