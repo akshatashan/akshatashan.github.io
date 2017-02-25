@@ -44,12 +44,12 @@ resources "/items", ItemController, except: [:new, :edit, :create] do
 end
 ```
 The actions in the example correspond to **ItemController**
-|Action   |Function  | Function parameters         | Url | Request json example |
-|-------  |-----------|----------| ------------------|--------------
+|Action | Function | Function parameters | Url | Request json example |
+|-------|----------|---------------------|-----|----------------------|
 |GET - All items| ~/web/controllers/item_controller/index| page,orderBy| /auth/items?page=${page}&orderBy=${orderBy}|
 |GET - Selected item|~/web/controllers/item_controller/show | item_id  |/auth/items/${item_id}
 |PUT - Updating an item| ~/web/controllers/item_controller/update| item_id, item| /auth/items/${itemId}|{“item": {"available": ${available}, "description": ${description}, "id": ${id}, "reservationEndDate": ${reservationEndDate}, "title": ${title}}
-|DELETE - Deleting an item| /web/controllers/item_controller/delete|item_id|/auth/items/${itemId}
+|DELETE - Deleting an item| /web/controllers/item_controller/delete|item_id|/auth/items/${itemId}|
 
 Note the both the controllers **UserController** and **ItemController** have the line at the top of the file
 ```sh
