@@ -1,4 +1,5 @@
-# Data Governance
+### What is Data Governance?
+Is a set of principles and practices that ensure high quality data to meet information needs of stakeholders.
 
 ### What does it solve?
 - Confusing data
